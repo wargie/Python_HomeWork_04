@@ -1,5 +1,7 @@
 from random import randint
-k = randint(2, 10)
-print(f'Дана степень числа k равная {k}')
-#10*x² = 0
-print(f'10*x^{k} = 0')
+k = 5
+a = randint(0, 101)
+b = randint(0, 101)
+print(f'{a}*x^{k} + {b}*x + 5 = 0')
+with open('task_033.txt', 'w') as data:
+    data.write(f'{a}*x^{k} + {b}*x + 5 = 0')
